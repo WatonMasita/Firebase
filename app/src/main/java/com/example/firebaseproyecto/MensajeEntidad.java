@@ -9,13 +9,20 @@ public class MensajeEntidad {
 
     @PrimaryKey
     @NonNull
-    public String id;
+    public String id;     // ID del mensaje (Firebase)
 
-    public String nombre;
-    public String texto;
+    public String uid;    // UID del usuario autenticado
+    public String nombre; // Nombre visible
+    public String texto;  // Mensaje
 
-    public MensajeEntidad(@NonNull String id, String nombre, String texto) {
+    // Constructor vacío (Room lo necesita)
+    public MensajeEntidad() {
+    }
+
+    // Constructor completo (lo usas tú al crear mensajes nuevos)
+    public MensajeEntidad(@NonNull String id, String uid, String nombre, String texto) {
         this.id = id;
+        this.uid = uid;
         this.nombre = nombre;
         this.texto = texto;
     }

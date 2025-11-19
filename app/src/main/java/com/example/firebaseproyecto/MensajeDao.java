@@ -22,4 +22,8 @@ public interface MensajeDao {
 
     @Query("SELECT * FROM mensajes")
     List<MensajeEntidad> obtenerTodos();
+
+    // 🔥 NECESARIO PARA TIEMPO REAL
+    @Query("DELETE FROM mensajes")
+    void clearAll();  // <-- AGREGA ESTO
 }

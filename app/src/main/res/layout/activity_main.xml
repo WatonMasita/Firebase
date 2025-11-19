@@ -22,11 +22,18 @@
         android:layout_height="wrap_content"
         android:text="Agregar"/>
 
+    <!-- BOTÓN CERRAR SESIÓN -->
+    <Button
+        android:id="@+id/btnSalir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cerrar sesión"
+        android:layout_marginTop="10dp"/>
+
     <ListView
         android:id="@+id/listViewMensajes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="20dp" />
-
 
 </LinearLayout>

@@ -34,18 +34,27 @@ android {
 
 dependencies {
 
+    // Android base
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
-    implementation(libs.firebase.database)
+
+    // Firebase BOM (administra versiones)
+    implementation(platform("com.google.firebase:firebase-bom:33.1.0"))
+
+    // Firebase Authentication (¡LO QUE FALTABA!)
+    implementation("com.google.firebase:firebase-auth")
+
+    // Firebase Database
+    implementation("com.google.firebase:firebase-database")
+
+    // Room
     implementation("androidx.room:room-runtime:2.6.1")
     annotationProcessor("androidx.room:room-compiler:2.6.1")
-    implementation("com.google.firebase:firebase-database:20.3.0")
 
+    // Tests
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
-    apply(plugin = "com.google.gms.google-services")
-
 }
