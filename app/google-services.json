@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "156268289625",
+    "firebase_url": "https://proyecto1-ba80e-default-rtdb.firebaseio.com",
+    "project_id": "proyecto1-ba80e",
+    "storage_bucket": "proyecto1-ba80e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:156268289625:android:13e7761d8305604f32db48",
+        "android_client_info": {
+          "package_name": "com.example.firebaseproyecto"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9eilGwmInRvU4Phojc2Vfkd9pskESdB4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
