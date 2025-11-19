@@ -1,3 +1,6 @@
+package com.example.firebaseproyecto;
+
+import androidx.annotation.NonNull;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
@@ -5,12 +8,13 @@ import androidx.room.PrimaryKey;
 public class MensajeEntidad {
 
     @PrimaryKey
+    @NonNull
     public String id;
 
     public String nombre;
     public String texto;
 
-    public MensajeEntidad(String id, String nombre, String texto) {
+    public MensajeEntidad(@NonNull String id, String nombre, String texto) {
         this.id = id;
         this.nombre = nombre;
         this.texto = texto;

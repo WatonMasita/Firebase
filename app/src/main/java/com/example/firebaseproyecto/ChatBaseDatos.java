@@ -1,3 +1,5 @@
+package com.example.firebaseproyecto;
+
 import androidx.room.Database;
 import androidx.room.RoomDatabase;
 
