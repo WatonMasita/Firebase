@@ -4,6 +4,21 @@
     android:orientation="vertical"
     android:padding="20dp">
 
+    <!-- TOPIC MQTT ARRIBA -->
+    <EditText
+        android:id="@+id/txtTopicMQTT"
+        android:hint="Topic MQTT (ej: chat/general)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnSuscribirseMQTT"
+        android:text="Conectar y Suscribirse MQTT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"/>
+
+    <!-- CAMPOS DEL CHAT -->
     <EditText
         android:id="@+id/txtNombre"
         android:layout_width="match_parent"
@@ -22,7 +37,6 @@
         android:layout_height="wrap_content"
         android:text="Agregar"/>
 
-    <!-- BOTÓN CERRAR SESIÓN -->
     <Button
         android:id="@+id/btnSalir"
         android:layout_width="match_parent"

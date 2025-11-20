@@ -26,6 +26,7 @@ android {
             )
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
@@ -40,16 +41,28 @@ dependencies {
     implementation(libs.activity)
     implementation(libs.constraintlayout)
 
-    // Firebase BOM (administra versiones)
+    // Firebase BOM
     implementation(platform("com.google.firebase:firebase-bom:33.1.0"))
 
-    // Firebase Authentication (¡LO QUE FALTABA!)
+    // Firebase Authentication
     implementation("com.google.firebase:firebase-auth")
 
-    // Firebase Database
+    // Firebase Realtime Database
     implementation("com.google.firebase:firebase-database")
 
-    // Room
+    // ----------------------------------
+    // MQTT (Paho AndroidX compatible)
+    // ----------------------------------
+
+    // Reemplaza el antiguo paho.android.service
+    implementation("com.github.hannesa2:paho.mqtt.android:3.3.5")
+
+    // Cliente MQTT base (sí debe quedarse)
+    implementation("org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.2.5")
+
+    // ----------------------------------
+    // Room Database
+    // ----------------------------------
     implementation("androidx.room:room-runtime:2.6.1")
     annotationProcessor("androidx.room:room-compiler:2.6.1")
 
@@ -58,3 +71,4 @@ dependencies {
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
 }
+
